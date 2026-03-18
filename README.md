@@ -147,6 +147,18 @@ Immediate next steps:
 3. Implement a worker heartbeat protocol.
 4. Add first end-to-end deploy/health integration test.
 
+## Repository Layout
+
+- `cmd/orbiter/` — CLI entrypoint and command wiring.
+- `cmd/orbiter-agent/` — worker daemon entrypoint.
+- `internal/controlplane/` — scheduler, reconciler, and API server internals.
+- `internal/worker/` — agent runtime internals.
+- `pkg/api/` — shared API types and contracts used across components.
+- `configs/` — local and development cluster configuration files.
+- `deploy/` — manifests and scripts for running local multi-node setups.
+- `scripts/` — helper scripts (bootstrap, lint, test wrappers).
+- `docs/architecture/` — architecture and design documentation.
+
 ## Contributing
 
 Contributions are welcome from day one.
@@ -158,4 +170,4 @@ If you want to help, open an issue with one of:
 
 ## License
 
-TBD
+Orbiter is licensed under the **MIT License**. See [`LICENSE`](./LICENSE) for full text.
