@@ -1,0 +1,38 @@
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs / temp
+*.log
+*.tmp
+*.swp
+*.swo
+.tmp/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Go build / test artifacts
+bin/
+dist/
+cover.out
+coverage.out
+*.test
+
+# Dependency/vendor workspace state
+vendor/
+
+# Runtime data
+*.pid
+*.sock
+
+# Tool caches
+.gocache/
+.gomodcache/
+
+# Generated artifacts
+*.gen.go
